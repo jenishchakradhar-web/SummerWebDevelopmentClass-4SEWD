@@ -3,63 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <h1>User Registration</h1>
-    <h2>Personal Details</h2>
-    <div>
-      <label>Frist Name:</label>
-      <input type="text" />
-    </div>
-    <div>
-      <label>Last Name:</label>
-      <input type="text" />
-    </div>
-    <div>
-      <label>Age:</label>
-      <input type="number" />
-    </div>
-    <div>
-      <label>Gender:</label>
-      <select>
-        <option>Male</option>
-        <option>Female</option>
-        <option>Other</option>
-      </select>
-    </div>
-    <div>
-      <label>Profile Pictures:</label>
-      <button>Browse...</button>
-      <lable>NO files selected.</lable>
-    </div>
-    <h2>Account Details</h2>
-    <div>
-      <label>Email:</label>
-      <input type="email" />
-    </div>
-    </br>
-    <div>
-      <label>Password:</label>
-      <input type="password" />
-    </div>
-    </br>
-    <div>
-      <label>Role:</label>
-      <input type="radio" /> <label> Admin</label> <input type="radio" />
-      <label> User</label>
-    </div>
-</br>
-    <div>
-      <input type="checkbox" />
-      <label>I agree with the terms and conditions.</label>
-    </div>
-    </br>
-    <div>
-      <button>Register</button>
-      <button>Reset</button>
-    </div>
-    </br>
+    <form>
+      <h2>Personal Details</h2>
+      <div class="form-group">
+        <label>Frist Name:</label>
+        <input type="text" />
+      </div>
+      <div class="form-group">
+        <label>Last Name:</label>
+        <input type="text" />
+      </div>
+      <div class="form-group">
+        <label>Age:</label>
+        <input type="number" />
+      </div>
+      <div>
+        <label>Gender:</label>
+        <select>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="btn">
+        <label>Profile Pictures:</label>
+        <button>Browser...</button>
+        <label>No files selected.</label>
+      </div>
+
+      <h2>Account Details</h2>
+      <div>
+        <label>Email:</label>
+        <input type="email" />
+      </div>
+
+      <div class="form-group">
+        <label>Password:</label>
+        <input type="password" />
+      </div>
+      <br />
+      <div class="form-group">
+        <label>Role:</label>
+        <input type="radio" /> <label> Admin</label> <input type="radio" />
+        <label> User</label>
+      </div>
+      <br />
+      <div class="form-group">
+        <input class="checkbox" type="checkbox" />
+        <label>I agree with the terms and conditions.</label>
+      </div>
+      <br />
+      <div>
+        <button>Register</button>
+        <button>Reset</button>
+      </div>
+      <br />
+    </form>
     <footer>©2026 My To do list. All rights reserved</footer>
   </body>
 </html>
